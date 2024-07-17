@@ -1,0 +1,44 @@
+.contenedor-grid{
+   
+   color: white;
+background-color: black;
+text-transform: uppercase;
+line-height: 60px;
+
+    height: 250px;
+    border: 2px solid red;
+    display: grid;
+    padding: 100px 80px;
+    /*indica cuantas columnas y de que tamaños seran*/
+    grid-template-columns: 50px 200px 400px 50px;
+    /*indica cuantas filas y de que tamaño seran*/
+    grid-template-rows: 60px 80px 60px 60px;
+    grid-template-areas: "aprende aprende aprende aprende"
+                        ". enlas escuelas escuelas"
+                        ". . escuelas escuelas"
+                        ". . delacdmx delacdmx";
+}
+.aprende{
+    grid-area: aprende;
+    font-size: 50px;
+}
+.enlas{
+    grid-area: enlas;
+    font-size: 50;
+    /*para que las letras se separen*/
+    letter-spacing: -2px;
+    
+}
+.escuelas{
+    grid-area: escuelas;
+    font-size: 75px;
+    font-weight: 900px;
+   font-family: "Roboto", sans-serif;
+
+}
+.delacdmx{
+    grid-area: delacdmx;
+}
+span{
+    border: 2px solid violet;
+}
